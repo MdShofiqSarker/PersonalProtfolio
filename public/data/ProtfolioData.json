@@ -1,0 +1,177 @@
+{
+  "navbar": {
+    "logo": "Shofiq.dev",
+    "links": [
+      { "name": "Home", "ref": "#home" },
+      { "name": "About", "ref": "#about" },
+      { "name": "Services", "ref": "#services" },
+      { "name": "Skills", "ref": "#skills" },
+      { "name": "Projects", "ref": "#projects" },
+      { "name": "Contact", "ref": "#contact" }
+    ]
+  },
+
+
+  "hero": {
+    "name": "Md. ShofiQ",
+    "profession": "Full Stack Developer",
+    "intro": "I create responsive, modern websites with React, Tailwind, and Node.js",
+    "contact_link": "#",
+    "profile_img": "https://i.ibb.co.com/yBBJFgzw/shofiq.jpg",
+    "greeting": "Welcome To My Portfolio",
+    "tagline": "Building modern, creative & responsive web solutions.",
+    "ctaHire": "Hire Me",
+    "ctaResume": "Download Resume"
+},
+
+  "about": {
+  "title": "Know Me More",
+  "subtitle": "Who I Am",
+  "name": "Shofiq Sarker",
+  "role": "Front-End Developer",
+  "availability": "Web Development",
+  "description": "I am Shofiq Sarker, a passionate Front-End Developer focused on creating modern, responsive, and user-friendly web applications. With a deep interest in UI/UX design and clean, structured code, I love turning ideas into visually appealing digital experiences. I work with technologies like React.js, TailwindCSS, and JavaScript to build interactive and performance-optimized web interfaces.",
+  "details": [
+    "Technical Skills",
+    "Web Development",
+    "Design"
+  ],
+  "hobbies": "When I’m not coding, I enjoy learning new technologies and improving my design sense. I believe in continuous learning and always aim to bring innovation and creativity into my projects.",
+  "resume": "https://your-resume-link.com/your_resume.pdf",
+  "socials": {
+    "github": "https://github.com/MdShofiqSarker",
+    "facebook": "https://facebook.com/yourfacebook",
+    "whatsapp": "https://wa.me/yourwhatsapplink"
+  },
+  "image": "https://i.ibb.co.com/yBBJFgzw/shofiq.jpg"
+},
+
+  
+  "services": {
+  "title": "Services",
+  "subtitle": "What I Do",
+  "items": [
+    {
+      "id": 1,
+      "icon": "FaCode",
+      "title": "Front-End Development",
+      "description": "Building responsive, dynamic, and high-performance web interfaces using React.js and TailwindCSS."
+    },
+    {
+      "id": 2,
+      "icon": "FaPalette",
+      "title": "UI/UX Design",
+      "description": "Creating clean, modern, and user-friendly interface designs focused on smooth user experience."
+    },
+    {
+      "id": 3,
+      "icon": "FaMobileAlt",
+      "title": "Responsive Design",
+      "description": "Ensuring seamless compatibility across all devices and screen sizes with a mobile-first approach."
+    },
+    {
+      "id": 4,
+      "icon": "FaServer",
+      "title": "API Integration",
+      "description": "Connecting front-end apps with REST APIs for dynamic and real-time data-driven solutions."
+    },
+    {
+      "id": 5,
+      "icon": "FaSearch",
+      "title": "SEO Optimization",
+      "description": "Improving website visibility and loading speed for better user reach and engagement."
+    }
+  ]
+},
+
+  "projects": [
+  {
+    "name": "Medifit",
+    "desc": "A personal portfolio website built with React and TailwindCSS showcasing projects and skills.",
+    "img": "https://i.ibb.co.com/fdnsRtDQ/Screenshot-2025-10-23-114845.png",
+    "live": "https://mdshofiqsarker.github.io/bd-calling-project-1/",
+    "github": "https://github.com/MdShofiqSarker/bd-calling-project-1"
+  },
+  {
+    "name": "Personal Protfolio",
+    "desc": "A portfolio website built with TailwindCSS showcasing projects and skills.",
+    "img": "https://i.ibb.co.com/DfbxYK4g/Screenshot-2025-11-12-141523.png",
+    "live": "https://mdshofiqsarker.github.io/tailwind-protfolio/",
+    "github": "https://github.com/MdShofiqSarker/tailwind-protfolio"
+  },
+  {
+    "name": "Body Shap",
+    "desc": "A modern blog platform with dynamic content, commenting system, and search functionality.",
+    "img": "https://i.ibb.co.com/y2Z5Q1g/Screenshot-2025-10-23-114317.png",
+    "live": "https://mdshofiqsarker.github.io/Gym/",
+    "github": "https://github.com/MdShofiqSarker"
+  }
+],
+
+  "testimonials": {
+  "title": "Testimonials",
+  "subtitle": "What Clients Say",
+  "items": [
+    {
+      "id": 1,
+      "name": "Sadia Rahman",
+      "role": "UI/UX Designer",
+      "image": "https://i.ibb.co.com/sF2tGkc/client1.jpg",
+      "rating": 5,
+      "feedback": "Working with Shofiq was an absolute pleasure. His attention to detail and clean code made our project shine!"
+    },
+    {
+      "id": 2,
+      "name": "Rafi Ahmed",
+      "role": "Business Owner",
+      "image": "https://i.ibb.co.com/2t8pZrL/client2.jpg",
+      "rating": 4,
+      "feedback": "He delivered the website before deadline and maintained great communication throughout the project."
+    },
+    {
+      "id": 3,
+      "name": "Nusrat Jahan",
+      "role": "Marketing Manager",
+      "image": "https://i.ibb.co.com/XYFTKX4/client3.jpg",
+      "rating": 5,
+      "feedback": "Professional, talented, and creative! Highly recommend Shofiq for front-end development projects."
+    }
+  ]
+},
+"contact": {
+  "email": "shofiq@example.com",
+  "phone": "+880123456789",
+  "location": "Dhaka, Bangladesh",
+  "socials": {
+    "github": "https://github.com/MdShofiqSarker",
+    "linkedin": "https://linkedin.com/in/shofiq",
+    "facebook": "https://facebook.com/shofiq",
+    "whatsapp": "https://wa.me/880123456789"
+  }
+},
+
+"skills": [
+  {
+    "category": "Frontend",
+    "items": [
+      { "name": "HTML", "level": 95, "icon": "FaHtml5" },
+      { "name": "CSS", "level": 85, "icon": "FaCss3Alt" },
+      { "name": "Tailwind CSS", "level": 90, "icon": "SiTailwindcss" },
+      { "name": "JavaScript", "level": 80, "icon": "FaJsSquare" },
+      { "name": "React JS", "level": 75, "icon": "FaReact" }
+    ]
+  },
+  {
+    "category": "Tools / Others",
+    "items": [
+      { "name": "Git & GitHub", "level": 85, "icon": "FaGitAlt" },
+      { "name": "VS Code", "level": 90, "icon": "SiVisualstudiocode" },
+      { "name": "Firebase", "level": 65, "icon": "SiFirebase" }
+    ]
+  }
+],
+
+  "footer": {
+    "text": "© 2025 Nobita.dev | Cyber Edition"
+  }
+}
