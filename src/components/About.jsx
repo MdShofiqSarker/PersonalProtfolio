@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaGithub, FaFacebook, FaWhatsapp, FaDownload } from "react-icons/fa";
-import data from "../../public/data/ProtfolioData.json";
 
 export default function About() {
-  const about = data.about;
+  const [about, setAbout] = useState(null);
+
+  useEffect(() => {
+    fetch("/data/ProtfolioData.json")
+      .then((res) => res.json())
+      .then((data) => setAbout(data.about))
+      .catch((err) => console.error("Failed to load about data:", err));
+  }, []);
+
+  if (!about) return null;
 
   return (
     <section id="about" className="py-20 bg-[#03091a] text-white">

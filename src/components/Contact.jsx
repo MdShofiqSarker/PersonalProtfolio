@@ -1,10 +1,17 @@
-import React from "react";
-import data from "../../public/data/ProtfolioData.json";
+import React, { useEffect, useState } from "react";
 import { FaGithub, FaLinkedin, FaFacebook, FaWhatsapp } from "react-icons/fa";
 
 export default function Contact() {
-  const contact = data.contact;
+  const [contact, setContact] = useState(null);
 
+  useEffect(() => {
+    fetch("/data/ProtfolioData.json")
+      .then((res) => res.json())
+      .then((data) => setContact(data.contact))
+      .catch((err) => console.error("Failed to load contact:", err));
+  }, []);
+
+  if (!contact) return null;
   return (
     <section id="contact" className="py-20 bg-[#0f1422] text-white">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">

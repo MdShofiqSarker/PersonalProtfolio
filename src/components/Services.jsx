@@ -1,5 +1,4 @@
-import React from "react";
-import data from "../../public/data/ProtfolioData.json";
+import React, { useEffect, useState } from "react";
 import {
   FaCode,
   FaPalette,
@@ -17,7 +16,16 @@ const iconMap = {
 };
 
 export default function Services() {
-  const services = data.services;
+  const [services, setServices] = useState(null);
+
+  useEffect(() => {
+    fetch("/data/ProtfolioData.json")
+      .then((res) => res.json())
+      .then((data) => setServices(data.services))
+      .catch((err) => console.error("Failed to load services:", err));
+  }, []);
+
+  if (!services) return null;
 
   return (
     <section id="services" className="py-20 bg-[#0a183a] text-white">

@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaGithub, FaFacebook, FaWhatsapp, FaArrowRight, FaDownload } from "react-icons/fa";
-import data from "../../public/data/ProtfolioData.json";
 
 export default function Banner() {
-  const about = data.about;
+  const [about, setAbout] = useState(null);
+
+  useEffect(() => {
+    fetch("/data/ProtfolioData.json")
+      .then((res) => res.json())
+      .then((data) => setAbout(data.about))
+      .catch((err) => console.error("Error loading data:", err));
+  }, []);
+
+  if (!about) return <p className="text-center text-white">Loading...</p>;
 
   return (
     <section
@@ -83,7 +91,7 @@ export default function Banner() {
           <img
             src={about.image}
             alt={about.name}
-            className="relative rounded-lg w-72 h-72 object-cover shadow-2xl border-4 border-blue-500 hover:scale-105 transition-transform duration-500"
+            className="relative rounded-mf w-72 h-72 object-cover shadow-2xl border-4 border-blue-500 hover:scale-105 transition-transform duration-500"
           />
         </div>
       </div>

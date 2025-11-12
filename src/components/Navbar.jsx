@@ -1,11 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router";
-import data from "../../public/data/ProtfolioData.json";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Navbar() {
-  const nav = data.navbar;
+  const [nav, setNav] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    fetch("/data/ProtfolioData.json")
+      .then((res) => res.json())
+      .then((data) => setNav(data.navbar))
+      .catch((err) => console.error("Error loading data:", err));
+  }, []);
+
+  if (!nav) return <p className="text-center text-white py-4">Loading...</p>;
 
   return (
     <nav className="fixed w-full top-0 left-0 z-50 backdrop-blur-md bg-[#020617cc] border-b border-blue-500/20">

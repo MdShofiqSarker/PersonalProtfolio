@@ -1,8 +1,17 @@
-import React from "react";
-import data from "../../public/data/ProtfolioData.json";
+import React, { useEffect, useState } from "react";
 
 export default function Skills() {
-  const skills = data.skills;
+  const [skills, setSkills] = useState([]);
+
+  useEffect(() => {
+    fetch("/data/ProtfolioData.json")
+      .then((res) => res.json())
+      .then((data) => setSkills(data.skills))
+      .catch((err) => console.error("Error loading data:", err));
+  }, []);
+
+  if (!skills.length)
+    return <p className="text-center text-white py-10">Loading...</p>;
 
   return (
     <section id="skills" className="py-20 bg-[#03091a] text-white">

@@ -1,9 +1,18 @@
-import React from "react";
-import data from "../../public/data/ProtfolioData.json";
+import React, { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 
 export default function Testimonials() {
-  const testimonials = data.testimonials;
+  const [testimonials, setTestimonials] = useState(null);
+
+  useEffect(() => {
+    fetch("/data/ProtfolioData.json")
+      .then((res) => res.json())
+      .then((data) => setTestimonials(data.testimonials))
+      .catch((err) => console.error("Error loading data:", err));
+  }, []);
+
+  if (!testimonials)
+    return <p className="text-center text-white py-10">Loading...</p>;
 
   return (
     <section id="testimonials" className="py-20 bg-[#0a1a2b] text-white">

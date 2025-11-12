@@ -1,9 +1,15 @@
-import React from "react";
-import data from "../../public/data/ProtfolioData.json";
+import React, { useEffect, useState } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 export default function Projects() {
-  const projects = data.projects;
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    fetch("/data/ProtfolioData.json")
+      .then((res) => res.json())
+      .then((data) => setProjects(data.projects))
+      .catch((err) => console.error("Failed to load projects:", err));
+  }, []);
 
   return (
     <section id="projects" className="py-20 bg-[#060f27] text-white">
