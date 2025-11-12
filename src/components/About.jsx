@@ -5,7 +5,7 @@ export default function About() {
   const [about, setAbout] = useState(null);
 
   useEffect(() => {
-    fetch("/data/ProtfolioData.json")
+    fetch("../../public/data/ProtfolioData.json")
       .then((res) => res.json())
       .then((data) => setAbout(data.about))
       .catch((err) => console.error("Failed to load about data:", err));
