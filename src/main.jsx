@@ -1,5 +1,5 @@
 import React from 'react'
-import { createRoot } from 'react-dom/client'   // correct for React 18+
+import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import Root from './Root/Root.jsx'
@@ -12,17 +12,17 @@ import Contact from './components/Contact.jsx'
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    Component: Root,
+    path: '/',
+    element: <Root />,
     children: [
-      { index: true, path: "home", Component: Home },
-      { path: "about", Component: About },
-      { path: "services", Component: Services },
-      { path: "skills", Component: Skills },
-      { path: "projects", Component: Projects },
-      { path: "contact", Component: Contact }
-    ]
-  }
+      { index: true, element: <Home /> }, // ✅ Default route = Home page
+      { path: 'about', element: <About /> },
+      { path: 'services', element: <Services /> },
+      { path: 'skills', element: <Skills /> },
+      { path: 'projects', element: <Projects /> },
+      { path: 'contact', element: <Contact /> },
+    ],
+  },
 ])
 
 createRoot(document.getElementById('root')).render(
