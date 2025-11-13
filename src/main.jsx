@@ -15,8 +15,8 @@ const router = createBrowserRouter([
     path: '/',
     element: <Root />,
     children: [
-      { index: true, element: <Home /> }, // ✅ Default route = Home page
-      { path: 'about', element: <About /> },
+      { index:true, path: "/", Component:Home }, // ✅ Default route = Home page
+      { path: 'about', Component: About}
       { path: 'services', element: <Services /> },
       { path: 'skills', element: <Skills /> },
       { path: 'projects', element: <Projects /> },
