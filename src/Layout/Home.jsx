@@ -10,10 +10,10 @@ import Contact from '../components/Contact'
 export default function Home() {
   return (
     <div>
-      <section id="home">
+      <section id="banner">
         <Banner/>
       </section>
-
+      
       <section id="projects">
         <Projects/>
       </section>
@@ -22,9 +22,9 @@ export default function Home() {
         <Testimonials/>
       </section>
 
-      {/* <section id="about">
+      <section id="about">
         <About/>
-      </section> */}
+      </section>
 
       <section id="services">
         <Services/>

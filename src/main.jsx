@@ -15,14 +15,15 @@ const router = createBrowserRouter([
     path: '/',
     element: <Root />,
     children: [
-      { index:true, path: "/", Component:Home }, // ✅ Default route = Home page
-      { path: 'about', Component: About}
+      {index:true, element: <Home/> }, 
+      { path: 'about', element: <About/>},
       { path: 'services', element: <Services /> },
       { path: 'skills', element: <Skills /> },
       { path: 'projects', element: <Projects /> },
       { path: 'contact', element: <Contact /> },
     ],
   },
+
 ])
 
 createRoot(document.getElementById('root')).render(
