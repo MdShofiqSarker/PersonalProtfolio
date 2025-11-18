@@ -14,7 +14,7 @@ export default function Skills() {
     return <p className="text-center text-white py-10">Loading...</p>;
 
   return (
-    <section id="skills" className="py-20 bg-[#03091a] text-white h-screen">
+    <section id="skills" className="py-20 bg-[#03091a] text-white lg:h-screen">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <h2 className="text-3xl font-bold text-center text-blue-400">My Skills</h2>

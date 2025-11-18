@@ -5,7 +5,7 @@ export default function About() {
   const [about, setAbout] = useState(null);
 
   useEffect(() => {
-    fetch("../../public/data/ProtfolioData.json")
+    fetch("./data/ProtfolioData.json")
       .then((res) => res.json())
       .then((data) => setAbout(data.about))
       .catch((err) => console.error("Failed to load about data:", err));
@@ -14,7 +14,7 @@ export default function About() {
   if (!about) return null;
 
   return (
-    <section id="about" className="py-20 bg-[#03091a] text-white">
+    <section id="about" className="py-20 lg:h-screen bg-[#03091a] text-white">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-10">

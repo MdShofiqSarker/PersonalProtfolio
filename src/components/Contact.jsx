@@ -13,7 +13,7 @@ export default function Contact() {
 
   if (!contact) return null;
   return (
-    <section id="contact" className="py-20 bg-[#0f1422] text-white">
+    <section id="contact" className="py-20 lg:h-screen items-center lg:mt-10 bg-[#0f1422] text-white">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
 
         {/* Details */}

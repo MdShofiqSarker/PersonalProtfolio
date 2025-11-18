@@ -12,7 +12,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <section id="projects" className="py-20 bg-[#060f27] text-white">
+    <section id="projects" className="py-20 lg:h-screen bg-[#060f27] text-white">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <h2 className="text-3xl font-bold text-center text-blue-400">Projects</h2>

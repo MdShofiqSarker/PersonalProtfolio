@@ -1,15 +1,5 @@
 {
-  "navbar": {
-    "logo": "Shofiq.dev",
-    "links": [
-      { "name": "Home", "ref": "#home" },
-      { "name": "About", "ref": "#about" },
-      { "name": "Services", "ref": "#services" },
-      { "name": "Skills", "ref": "#skills" },
-      { "name": "Projects", "ref": "#projects" },
-      { "name": "Contact", "ref": "#contact" }
-    ]
-  },
+ 
 
 
   "hero": {
@@ -37,11 +27,11 @@
     "Design"
   ],
   "hobbies": "When I’m not coding, I enjoy learning new technologies and improving my design sense. I believe in continuous learning and always aim to bring innovation and creativity into my projects.",
-  "resume": "https://your-resume-link.com/your_resume.pdf",
+  "resume": "https://i.ibb.co.com/CKZJR0Q9/Shafiq.jpg",
   "socials": {
     "github": "https://github.com/MdShofiqSarker",
-    "facebook": "https://facebook.com/yourfacebook",
-    "whatsapp": "https://wa.me/yourwhatsapplink"
+    "facebook": "https://www.facebook.com/share/1WqdUoriVP/",
+    "whatsapp": "https://wa.me/message/RZBD65ELDD4OE1 "
   },
   "image": "https://i.ibb.co.com/yBBJFgzw/shofiq.jpg"
 },

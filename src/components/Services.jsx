@@ -28,7 +28,7 @@ export default function Services() {
   if (!services) return null;
 
   return (
-    <section id="services" className="py-20 bg-[#0a183a] text-white">
+    <section id="services" className="py-20  lg:h-screen bg-[#0a183a] text-white">
       <div className="max-w-6xl mx-auto px-6 text-center">
         {/* Header */}
         <h3 className="text-blue-400 uppercase tracking-widest font-semibold mb-2">
